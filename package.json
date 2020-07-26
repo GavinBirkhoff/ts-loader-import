@@ -1,0 +1,48 @@
+{
+  "name": "ts-loader-import",
+  "version": "1.0.0",
+  "description": "components was activing when react components was touched.",
+  "main": "build/ts-loader-import.cjs.js",
+  "module": "build/ts-loader-import.es.js",
+  "jsnext:main": "build/ts-loader-import.es.js",
+  "types": "types/index.d.ts",
+  "files": [
+    "build",
+    "types"
+  ],
+  "scripts": {
+    "build": "babel-node --presets=@babel/preset-env ./config/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GavinBirkhoff/ts-loader-import.git"
+  },
+  "keywords": [
+    "react",
+    "import",
+    "ts-loader-import"
+  ],
+  "author": "Gavin Birkhoff <gavinbirkhoff@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GavinBirkhoff/ts-loader-import/issues"
+  },
+  "homepage": "https://github.com/GavinBirkhoff/ts-loader-import#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/node": "^7.10.5",
+    "@babel/plugin-transform-typescript": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@types/node": "^14.0.23",
+    "fs-extra": "^9.0.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.22.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "rollup-plugin-uglify": "^6.0.4",
+    "typescript": "^3.9.7"
+  }
+}
