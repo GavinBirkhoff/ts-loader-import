@@ -1,17 +1,13 @@
 {
   "name": "ts-loader-import",
-  "version": "1.0.0",
-  "description": "components was activing when react components was touched.",
-  "main": "build/ts-loader-import.cjs.js",
-  "module": "build/ts-loader-import.es.js",
-  "jsnext:main": "build/ts-loader-import.es.js",
-  "types": "types/index.d.ts",
+  "version": "1.0.18",
+  "description": "A plugin for customize import by ts-loader",
+  "main": "lib/index.js",
   "files": [
-    "build",
-    "types"
+    "lib"
   ],
   "scripts": {
-    "build": "babel-node --presets=@babel/preset-env ./config/build.js"
+    "build": "pearls-tools build"
   },
   "repository": {
     "type": "git",
@@ -29,20 +25,14 @@
   },
   "homepage": "https://github.com/GavinBirkhoff/ts-loader-import#readme",
   "devDependencies": {
-    "@babel/cli": "^7.10.5",
-    "@babel/core": "^7.10.5",
-    "@babel/node": "^7.10.5",
-    "@babel/plugin-transform-typescript": "^7.10.5",
-    "@babel/preset-env": "^7.10.4",
-    "@types/node": "^14.0.23",
-    "fs-extra": "^9.0.1",
-    "rimraf": "^3.0.2",
-    "rollup": "^2.22.0",
-    "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-typescript2": "^0.27.1",
-    "rollup-plugin-uglify": "^6.0.4",
+    "@types/node": "^14.0.27",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "pearls-tools": "0.0.3",
+    "prettier": "^2.0.5",
     "typescript": "^3.9.7"
-  }
+  },
+  "dependencies": {}
 }
